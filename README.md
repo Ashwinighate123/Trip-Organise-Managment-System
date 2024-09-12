@@ -6,22 +6,31 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+# Back-End Architecture:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# POJO (Plain Old Java Object): 
 
-## Build
+ Defines the attributes related to user details, trips, and bookings.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Repository:
 
-## Running unit tests
+Extends JpaRepository and manages database interaction with the necessary annotations like @Repository.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Service: 
 
-## Running end-to-end tests
+Contains business logic and uses the @Service annotation to perform operations by autowiring the repository.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# Controller: 
 
-## Further help
+Uses @RestController to define endpoints for front-end interaction. It has methods for:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# GET: Retrieve all information (e.g., trip details).
+# POST: Save new records (e.g., new bookings).
+# PUT: Update existing records (e.g., edit bookings).
+# DELETE: Delete records (e.g., cancel bookings).
+
+# Frond End are in this link
+
+https://github.com/Ashwinighate123/Trip-Organise-Managment-System-FrontEnd.git
+
+![project1](https://github.com/user-attachments/assets/5a38c328-169c-4fea-b3d1-1a2cb9a43d7a)
